@@ -1,5 +1,3 @@
-<!-- php files can't even execute here so file extension is a bit useless but meh -->
-
 <!DOCTYPE html>
 
 <html>
@@ -14,6 +12,9 @@
         
         <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="jqry.js"></script>
 
         <!-- Custom JS -->
         <script type="text/javascript" src="main.js"></script>
@@ -93,10 +94,26 @@
                             </div>
                             <img src="https://hackadaycom.files.wordpress.com/2017/10/hackercrowbar.jpg">
                         </article>
+
+                        <article>
+                            <div>
+                                <h2>Valve udgiver Half-life 2 : Episode 2, Chapter 2</h2>
+                                <p>Nå ja, de har også gjort Counter-Strike : Global Offensive gratis</p>
+                                <a>Læs mere</a>
+                            </div>
+                            <img src="http://cdn.themis-media.com/media/global/images/library/deriv/54/54317.jpg">
+                        </article>
                     </div>
 
                     <div class="side"> <!-- Noget med jQuery -->
-                        
+                        <input id="news-query"><a id="news-search">Search</a>
+                        <h2>Actual real news : <span id='news-current'></span></h2> <!-- Dynamic content -->
+                        <span id="news-type"></span>
+                        <div id="news">
+                            
+                            
+                        </div>
+                        <sub>Powered by NewsAPI</sub> <!-- There was a little piece of their text that said this had to be put here, so I did. :-) -->
                     </div>
                 </div>
             </div>

@@ -53,6 +53,7 @@ nav{
 nav ul{
     transition: 0.3s;
     max-height: 0;
+    overflow-y: hidden;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -146,6 +147,7 @@ nav li a:hover{
 
 .content{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
 }
 .content > div{
@@ -155,9 +157,20 @@ nav li a:hover{
     .content{
         flex-direction: row;
     }
-    .content > div{
-        width: 50%;
+    .content .primary{
+        width: 60%;
     }
+    .content .side{
+        width: 30%;
+    }
+}
+
+#news article h3, #news article a{
+    width: 50%;
+}
+#news article a img{
+    width: 100%;
+    max-width: 100%;
 }
 
 article{
